@@ -5,7 +5,7 @@ const instructions = "Guess a number. A correct answer is 1 point and an incorre
 let score = 0;
 let username = "";
 const generateRandom = (min, max)=>{
-  return Math.floor(min + Math.random() * max )
+  return Math.floor( Math.random() * max + min )
 }
 
 // print out the instructions
